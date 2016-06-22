@@ -7,11 +7,11 @@
 		// Private constructor
 		 private function __construct() { }
 
-		/* Keeps track if food record ids started
-		 *
-		 * @access public startFood
-		 * @param food
-		 * @return array foodPerDay
+		/** 
+		 * Keeps track if food record started
+		 * @access public
+		 * @param void
+		 * @return object
 		 */	
 		public static function startFood(){
 			if (!self::$start)

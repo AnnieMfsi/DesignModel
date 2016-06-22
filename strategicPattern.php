@@ -1,5 +1,7 @@
 <?php
-php info(); exit();
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 	class WorkClass{
 		public $requirement = NULL;
@@ -22,12 +24,12 @@ php info(); exit();
 	}
 
 	$objWork = new WorkClass('manager');
-	if($objWork->$requirement == 'manager'){
+	if($objWork->requirement == 'manager'){
 		$objWork->manager();
 	}
-	else if($objWork->$requirement == 'sweeper'){
+	else if($objWork->requirement == 'sweeper'){
 		$objWork->manager();
 	}
-	else if($objWork->$requirement == 'developer'){
+	else if($objWork->requirement == 'developer'){
 	}
 ?>

@@ -3,9 +3,22 @@
 
 		private $name;
 
+		/**
+		 * Return name
+		 * @access public
+		 * @param 
+		 * @return string
+		 */
 		function getName(){
 			return $this->name;
 		}
+
+		/**
+		 * Setter method
+		 * @access public
+		 * @param string
+		 * @return void
+		 */
 		function setName($newName){
 			$this->name = $newName;
 		}

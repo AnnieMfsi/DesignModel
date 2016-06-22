@@ -4,6 +4,13 @@
 class Stock 
 {
 	public $total = 100;
+
+	/**
+		 * Constructor function
+		 * @access public
+		 * @param void
+		 * @return void
+		 */
 	function __construct()
 	{
 		if($this->total > 20)
@@ -22,6 +29,12 @@ class Stock
 
 class Watcher 
 {	
+	/**
+		 * Watcher message
+		 * @access public
+		 * @param void
+		 * @return void
+		 */
 	public function send()
 	{
 		echo "Update your stock";

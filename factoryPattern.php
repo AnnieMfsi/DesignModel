@@ -6,17 +6,23 @@ error_reporting(E_ALL);
 	{
 		private $breed;
 
-		 /* Keeps track of the books supplied
-		 *
-		 * @access public supplyBook
-		 * @param 
-		 * @return array books
+		 /**
+		 * Keeps track of the books supplied
+		 * @access public
+		 * @param object
+		 * @return void
 		 */
 		 function __construct($br)
 		 {
 			$this->breed = $br;
 		}
 		
+		/**
+		 * Display data
+		 * @access public
+		 * @param void
+		 * @return void
+		 */
 		function display(){
 			echo $this->breed;
 			echo Animal::getFood();
@@ -25,15 +31,23 @@ error_reporting(E_ALL);
 	}
 	class Animal{
 		private $food;
-		/* getFood()
-		 *
+
+		/**
+		 * Set the value of data member
 		 * @access public
-		 * @param 
-		 * @return string bookNeed
+		 * @param string
+		 * @return void
 		 */
 		function setFood($reqFood){
 			$this->food = $reqFood;
 		}
+
+		/**
+		 * Return the value of data member
+		 * @access public
+		 * @param 
+		 * @return string
+		 */
 		function getFood(){
 			return $this->food;
 		}
