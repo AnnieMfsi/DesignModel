@@ -31,5 +31,6 @@ error_reporting(E_ALL);
 		$objWork->manager();
 	}
 	else if($objWork->requirement == 'developer'){
+		$objWork->developer();
 	}
 ?>
